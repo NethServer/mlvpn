@@ -85,5 +85,6 @@ getent passwd mlvpn &>/dev/null || \
 
 
 %changelog
-* Wed Jun 21 2017 Luigi Iotti <luigi@iotti.biz> - 2.3.1
-- first release
+* Wed Aug 29 2018 Giacomo Sanchietti - 2.3.1-a06369fe
+- Build of markfoodyburton fork, commit: a06369fe7cb3395a13dca188fdb7b12b8edf1388
+- Based on a work of Luigi Iotti <luigi@iotti.biz>
