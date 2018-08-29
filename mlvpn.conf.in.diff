@@ -1,0 +1,12 @@
+--- ./doc/examples/mlvpn.conf.in.orig	2018-02-01 16:17:38.561389084 +0100
++++ ./doc/examples/mlvpn.conf.in	2018-02-01 16:17:51.359486246 +0100
+@@ -54,7 +54,8 @@
+ # You can visualise statistics using the www/ templates.
+ # RAW json stream available on http://[control_bind_host]:[control_bind_port]/status
+ # Edit www/js/mlvpn.js url to point to your mlvpn status URL.
+-#control_unix_path = "@localstatedir@/run/mlvpn.sock"
++# Please note, mlvpn chroot()'s to running user' home, and this is going to be local there
++#control_unix_path = "/mlvpn.sock"
+ #control_bind_host = "0.0.0.0"
+ #control_bind_port = "1040"
+ 
